@@ -1,1 +1,1 @@
-Hello World
+{"encoding": "utf8", "content": "Hello World"}

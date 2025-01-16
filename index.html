@@ -3,107 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome Page</title>
+    <title>Welcome to Claude MCP Test</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
+            margin: 0;
             padding: 20px;
             background-color: #f0f0f0;
         }
-        nav {
-            background-color: #333;
-            padding: 1em;
-            margin-bottom: 20px;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-right: 20px;
-        }
-        nav a:hover {
-            color: #ddd;
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
         h1, h2 {
             color: #333;
-            text-align: center;
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
         }
-        p {
-            line-height: 1.6;
-            color: #666;
+        .section {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #f8f8f8;
+            border-radius: 4px;
         }
         .contact-form {
-            background-color: white;
-            padding: 20px;
-            border-radius: 5px;
-            margin: 20px 0;
+            display: grid;
+            gap: 10px;
         }
         .contact-form input,
         .contact-form textarea {
-            width: 100%;
             padding: 8px;
-            margin-bottom: 10px;
             border: 1px solid #ddd;
             border-radius: 4px;
         }
-        .contact-form button {
-            background-color: #333;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
+        .features-list {
+            list-style: none;
+            padding: 0;
         }
-        footer {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #ddd;
-            text-align: center;
+        .features-list li {
+            margin: 10px 0;
+            padding-left: 20px;
+            position: relative;
         }
-        .social-links a {
-            margin: 0 10px;
-            color: #333;
-            text-decoration: none;
+        .features-list li:before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #4CAF50;
         }
     </style>
 </head>
 <body>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <h1>Welcome to My Page</h1>
-    <p>This is a simple welcome page created with Claude.</p>
-
-    <section id="about">
-        <h2>About Us</h2>
-        <p>We are a passionate team dedicated to creating amazing web experiences. Our goal is to deliver high-quality content and services to our users.</p>
-        <img src="/api/placeholder/400/300" alt="Team photo placeholder" />
-    </section>
-
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form class="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" rows="4" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-
-    <footer>
-        <div class="social-links">
-            <a href="#">Twitter</a>
-            <a href="#">Facebook</a>
-            <a href="#">LinkedIn</a>
-            <a href="#">Instagram</a>
+    <div class="container">
+        <h1>Welcome to Our Test Page</h1>
+        <p>This is a simple test page created by Claude to demonstrate GitHub operations.</p>
+        
+        <div class="section">
+            <h2>About Us</h2>
+            <p>We are a team dedicated to demonstrating the power of automation and collaboration using GitHub and Claude.</p>
+            <p>Our mission is to make development workflows more efficient and enjoyable.</p>
         </div>
-        <p>&copy; 2025 My Website. All rights reserved.</p>
-    </footer>
+
+        <div class="section">
+            <h2>Features</h2>
+            <ul class="features-list">
+                <li>Automated GitHub operations</li>
+                <li>Clean and responsive design</li>
+                <li>Integration with Claude AI</li>
+                <li>Modern CSS styling</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="4" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
